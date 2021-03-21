@@ -155,7 +155,7 @@ def gradient_trainer(config, sess, network, full_batch, val_batch, saver, test_n
 	param = tf.compat.v1.trainable_variables()
 	sess.run(init_model(param))
 
-	wfile = open("simpleNN_modfication.txt", "w+")
+	wfile = open("modify_simpleNN.txt", "w+")
 	weights = [sess.run(v) for v in param]
 	print(weights, file = wfile)
 	print(weights[0][0][0][0])

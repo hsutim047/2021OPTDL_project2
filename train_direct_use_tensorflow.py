@@ -123,7 +123,7 @@ def gradient_trainer(config, sess, network, full_batch, val_batch, saver, test_n
 
 	param = model.trainable_weights
 
-	wfile = open("direct_tensorflow.txt", "w+")
+	wfile = open("direct_use_tensorflow.txt", "w+")
 	sess.run(init_model(param))
 	weights = [sess.run(v) for v in param]
 	print(weights, file = wfile)

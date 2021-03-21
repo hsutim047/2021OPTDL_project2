@@ -1,5 +1,5 @@
 # Project 2 - part1
-Put `train_modify_simpleNN.py` and `train_direct_use_tensorflow.py` under `simpleNN/Python/` with below settings will generate the two .txt in this repository
+Put `train_modify_simpleNN.py` and `train_direct_use_tensorflow.py` under `simpleNN/Python/` with below settings will generate the `modify_simpleNN.txt` and `direct_use_tensorflow.txt` in the current directory
 ## Modification of simpleNN
 ```
 python3 train_modify_simpleNN.py \ 
