@@ -10,6 +10,8 @@ from net.net import CNN, CNN_model
 from newton_cg import newton_cg
 from utilities import read_data, predict, ConfigClass, normalize_and_reshape
 
+import sys
+
 def parse_args():
 	parser = argparse.ArgumentParser(description='Newton method on DNN')
 	parser.add_argument('--C', dest='C',
@@ -154,6 +156,7 @@ def gradient_trainer(config, sess, network, full_batch, val_batch, saver, test_n
 	print(weights[0][0][0][0], file = wfile)
 	"""
 	print(weights[0][0][0][0])
+	tf.print(weights, output_stream=sys.stdout)
 
 	wfile.close()
 
